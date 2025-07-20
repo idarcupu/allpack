@@ -1,0 +1,11 @@
+@extends('idaravel.layout')
+@section('konten')
+
+<!-- kode mulai dari sini -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+});
+</script>
+@endsection
