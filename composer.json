@@ -34,6 +34,6 @@
     "post-update-cmd": [
       "@php postinstall.php"
     ]
-  }
+  },
   "minimum-stability": "stable"
 }
