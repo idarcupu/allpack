@@ -27,5 +27,10 @@
       ]
     }
   },
+  "scripts": {
+      "post-autoload-dump": [
+          "@php artisan vendor:publish --tag=idaravel-templates --force"
+      ]
+  },
   "minimum-stability": "stable"
 }

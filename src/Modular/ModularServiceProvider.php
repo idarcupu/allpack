@@ -19,6 +19,12 @@ class ModularServiceProvider extends ServiceProvider {
     $this->loadModuleViews();
 
     View::share('idar', new \Idaravel\AllPack\Idar());
+
+    $this->publishes([
+        __DIR__ . '/template/idaravel' => resource_path('views/idaravel'),
+        __DIR__ . '/template/partials' => resource_path('views/partials'),
+        __DIR__ . '/template/public' => public_path(),
+    ], 'idaravel-templates');
   }
 
   private function loadModuleRoutes(){
