@@ -39,36 +39,11 @@
       <div class="mainnav__categoriy py-3">
         <ul class="mainnav__menu nav flex-column">
           <li class="nav-item mb-1">
-            <a href="{{ route('beranda.index') }}" class="nav-link mininav-toggle {{ navlinknya('beranda') }}">
+            <a href="#" class="nav-link mininav-toggle {{ $idar::navlinknya('beranda') }}">
               <span class="pli-layout-grid fw-bold fs-5 me-2"></span>
               <span class="nav-label mininav-content ms-1">Beranda</span>
             </a>
           </li>
-          <li class="nav-item mb-1">
-            <a href="{{ route('siaran.index') }}" class="nav-link mininav-toggle {{ navlinknya('siaran') }}">
-              <span class="pli-vpn fw-bold fs-5 me-2"></span>
-              <span class="nav-label mininav-content ms-1">Siaran</span>
-            </a>
-          </li>
-          <li class="nav-item mb-1">
-            <a href="{{ route('pengaturan.index') }}" class="nav-link mininav-toggle {{ navlinknya('pengaturan') }}">
-              <span class="pli-gears fw-bold fs-5 me-2"></span>
-              <span class="nav-label mininav-content ms-1">Pengaturan</span>
-            </a>
-          </li>
-          <!-- <li class="nav-item has-sub">
-            <a href="javascript:void(0)" class="mininav-toggle nav-link">
-              <span class="pli-layout-grid fw-bold fs-5 me-2"></span>
-              <span class="nav-label ms-1">Menu</span>
-            </a>
-            <ul class="mininav-content nav collapse" style="">
-              <li class="nav-item mb-1">
-                <a href="{{ route('beranda.index') }}" class="nav-link mininav-toggle {{ navlinknya('beranda') }}">
-                  <span class="nav-label mininav-content ms-1">Beranda</span>
-                </a>
-              </li>
-            </ul>
-          </li> -->
         </ul>
       </div>
     </div>

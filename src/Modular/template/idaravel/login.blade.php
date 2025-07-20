@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-    <title>Kompres Apps</title>
+    <title>Idaravel</title>
     @include('partials.css')
     @vite(['resources/js/app.js', 'resources/css/fonts.css', 'resources/css/premium-line-icons.min.css'])
     <link rel="stylesheet" href="{{asset('assets/css/utama.css')}}">

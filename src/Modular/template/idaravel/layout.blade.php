@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Kompres Apps</title>
+    <title>Idaravel</title>
     <link rel="icon" href="{{ asset('favicon.ico') }}">
     @include('partials.css')
     @vite(['resources/js/app.js', 'resources/css/fonts.css', 'resources/css/premium-line-icons.min.css'])

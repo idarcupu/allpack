@@ -5,7 +5,10 @@ namespace Idaravel\AllPack;
 class Idar {
 
     private static $helpers = [
-      'tglIndo'
+      'tglIndo', 'tglIndo2', 'terbilang',
+      'formatRupiah', 'navlinknya', 'listBulan',
+      'listHari', 'randomPassword', 'tglBarat',
+      'hitungUsia'
     ];
 
     public static function __callStatic($method, $args){

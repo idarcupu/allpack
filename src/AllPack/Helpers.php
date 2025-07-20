@@ -81,4 +81,66 @@ class Helpers {
     return $prefix . $rupiah;
   }
 
+  public static function navlinknya($path){
+    if(\Illuminate\Support\Str::contains(request()->path(), $path)){
+      return 'nav-link active';
+    }
+    return 'nav-link';
+  }
+
+  public static function listBulan(){
+    return [
+      '01' => 'Januari',
+      '02' => 'Februari',
+      '03' => 'Maret',
+      '04' => 'April',
+      '05' => 'Mei',
+      '06' => 'Juni',
+      '07' => 'Juli',
+      '08' => 'Agustus',
+      '09' => 'September',
+      '10' => 'Oktober',
+      '11' => 'November',
+      '12' => 'Desember'
+    ];
+  }
+
+  public static function listHari(){
+    return [
+      'Sunday'    => 'Minggu',
+      'Monday'    => 'Senin',
+      'Tuesday'   => 'Selasa',
+      'Wednesday' => 'Rabu',
+      'Thursday'  => 'Kamis',
+      'Friday'    => 'Jumat',
+      'Saturday'  => 'Sabtu',
+    ];
+  }
+
+  public static function randomPassword($batas = 8){
+    $pasnya = str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789');
+    $pass = substr($pasnya, 0, $batas);
+
+    return [
+      'hash' => bcrypt($pass),
+      'asli' => $pass
+    ];
+  }
+
+  public static function tglBarat($date){
+    $tgl = substr($date, 0, 2);
+    $bln = substr($date, 3, 2);
+    $thn = substr($date, 6, 4);
+    return "{$thn}-{$bln}-{$tgl}";
+  }
+
+  public static function hitungUsia($tanggalLahir, $tanggalSekarang = null){
+    $tanggalSekarang = $tanggalSekarang ?? date('Y-m-d');
+    $lahir = new DateTime($tanggalLahir);
+    $sekarang = new DateTime($tanggalSekarang);
+    $umur = $sekarang->diff($lahir);
+
+    return $umur->y . ' Thn, ' . $umur->m . ' Bln, ' . $umur->d . ' Hr';
+  }
+
 }

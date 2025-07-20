@@ -6,7 +6,7 @@
         {{-- <a href="javascript:(0)" class="brand-img stretched-link">
           <img src="javascript:(0)" alt="Department" class="Nifty logo" width="40" height="40">
         </a> --}}
-        <div class="brand-title"><label style="font-size: 15px;">KOMPRES APPS</label></div>
+        <div class="brand-title"><label style="font-size: 15px;">Idaravel</label></div>
       </div>
     </div>
     <div class="header__content">
