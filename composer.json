@@ -5,8 +5,8 @@
   "license": "MIT",
   "authors": [
     {
-        "name": "Idarcupu",
-        "email": "idarcupu@gmail.com"
+      "name": "Idarcupu",
+      "email": "idarcupu@gmail.com"
     }
   ],
   "require": {
@@ -18,6 +18,13 @@
     "psr-4": {
       "Idaravel\\AllPack\\": "src/AllPack/",
       "Idaravel\\Modular\\": "src/Modular/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Idaravel\\Modular\\ModularServiceProvider"
+      ]
     }
   },
   "minimum-stability": "stable"
