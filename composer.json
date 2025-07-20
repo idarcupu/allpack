@@ -28,9 +28,12 @@
     }
   },
   "scripts": {
-      "post-autoload-dump": [
-          "@php artisan vendor:publish --tag=idaravel-templates --force"
-      ]
-  },
+    "post-install-cmd": [
+      "@php postinstall.php"
+    ],
+    "post-update-cmd": [
+      "@php postinstall.php"
+    ]
+  }
   "minimum-stability": "stable"
 }

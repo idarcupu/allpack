@@ -24,7 +24,7 @@ class ModularServiceProvider extends ServiceProvider {
         __DIR__ . '/template/idaravel' => resource_path('views/idaravel'),
         __DIR__ . '/template/partials' => resource_path('views/partials'),
         __DIR__ . '/template/public' => public_path(),
-    ], 'idaravel-templates');
+    ], 'idaravel-layout');
   }
 
   private function loadModuleRoutes(){
