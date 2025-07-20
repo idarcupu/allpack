@@ -38,7 +38,7 @@ class MakeModuleCommand extends Command {
   }
 
   private function getStub($filename, $replacements = []){
-    $stubPath = __DIR__ . "/../../idarstub/{$filename}.stub";
+    $stubPath = __DIR__ . "/../idarstub/{$filename}.stub";
 
     if(!File::exists($stubPath)){
       $this->error("Stub file {$filename}.stub tidak ditemukan!");
