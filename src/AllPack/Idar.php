@@ -8,7 +8,7 @@ class Idar {
       'tglIndo', 'tglIndo2', 'terbilang',
       'formatRupiah', 'navlinknya', 'listBulan',
       'listHari', 'randomPassword', 'tglBarat',
-      'hitungUsia'
+      'hitungUsia', 'reqPost'
     ];
 
     public static function __callStatic($method, $args){

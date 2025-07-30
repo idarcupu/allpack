@@ -10,6 +10,24 @@ class Helpers {
     return strtolower(preg_replace('/([a-z])([A-Z])/', '$1_$2', $relation));
   }
 
+  function reqPost(string $url, array $data = [], array $headers = []){
+    try {
+        $res = \Illuminate\Support\Facades\Http::withHeaders($headers)->post($url, $data);
+
+        return [
+            'status' => $res->status(),
+            'body'   => $res->json(),
+            'raw'    => $res->body(),
+        ];
+    } catch (\Exception $e) {
+        return [
+            'status' => 500,
+            'body'   => ['success' => false, 'message' => 'Request gagal: ' . $e->getMessage(), 'output' => ''],
+            'raw'    => '',
+        ];
+    }
+}
+
   public static function tglIndo($tanggal){
     return date('d/m/Y', strtotime($tanggal));
   }
